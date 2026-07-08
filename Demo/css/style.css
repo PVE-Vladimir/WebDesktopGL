@@ -1,0 +1,41 @@
+#body {
+	margin: 10px auto;
+	width: 600px;
+}
+a {
+	color: #333300;
+	text-decoration: none;
+}
+a:visited {
+	color: #333300;
+}
+a:hover {
+	color: #333300;
+	text-decoration: underline;
+}
+h3 {
+	margin: 0;
+	padding: 0 0 .3em;
+}
+p {
+	margin: 0;
+	padding: 0 0 .5em;
+}
+.pane-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.pane-list li {
+	background: #c8dcff;
+	padding: 10px 20px 10px;
+	border-top: solid 1px #c4dfff;
+	cursor: pointer;
+}
+.pane-list li:hover {
+	background: #c4dfcf;
+}
+.logo {
+		background: #c8dcff;
+		width: 100%;
+}

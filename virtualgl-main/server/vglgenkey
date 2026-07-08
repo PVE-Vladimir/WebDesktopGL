@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Abort if the DISPLAY environment variable is unset, which may be the case if
+# the display manager is launched in a remote display session via XDMCP.
+# Otherwise this script will clobber the existing xauth key with no possibility
+# of regenerating it.
+if [ -z "$DISPLAY" ]; then
+	exit 0
+fi
+
+XAUTH=xauth
+if [ -x /usr/X11R6/bin/xauth ]; then
+	XAUTH=/usr/X11R6/bin/xauth
+fi
+if [ -x /usr/openwin/bin/xauth ]; then
+	XAUTH=/usr/openwin/bin/xauth
+fi
+if [ ! -d /etc/opt/VirtualGL ]; then
+	mkdir -p /etc/opt/VirtualGL
+fi
+if [ -f /etc/opt/VirtualGL/vgl_xauth_key ]; then
+	rm /etc/opt/VirtualGL/vgl_xauth_key
+fi
+$XAUTH -f /etc/opt/VirtualGL/vgl_xauth_key generate $DISPLAY . trusted timeout 0 ||
+	$XAUTH -f /etc/opt/VirtualGL/vgl_xauth_key add $DISPLAY . `$XAUTH list | awk '{print $3}' | uniq`
+chmod 644 /etc/opt/VirtualGL/vgl_xauth_key

@@ -1,0 +1,4 @@
+body {background: rgb(220,240,255);}
+li.my:hover {background: url(images/Ocean.png) repeat-x;}
+li.my{padding-top: 1px; padding-bottom: 15px; margin-top:-1em;height: 57px;}
+tr.main:hover {background: url(images/Ocean.png) repeat-x;}

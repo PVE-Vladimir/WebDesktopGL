@@ -1,0 +1,15 @@
+a							{color:black}
+a:hover						{color:FF6600}
+a:visited					{color:black}
+a:visited:hover				{color:FF6600}
+
+.nav						{font-family:arial,verdana,tahoma,helvetica,sans-serif,times; color:blue; font-weight:bold; font-size:8pt;}
+a.nav						{font-family:arial,verdana,tahoma,helvetica,sans-serif,times; color:blue; font-weight:bold; font-size:8pt;}
+a.nav:hover					{font-family:arial,verdana,tahoma,helvetica,sans-serif,times; color:red; font-weight:bold; font-size:8pt;}
+a.nav:visited				{font-family:arial,verdana,tahoma,helvetica,sans-serif,times; color:blue; font-weight:bold; font-size:8pt;}
+a.nav:visited:hover			{font-family:arial,verdana,tahoma,helvetica,sans-serif,times; color:red; font-weight:bold; font-size:8pt;}
+
+.itemnav					{font-family:arial,verdana,tahoma,helvetica,sans-serif,times; color:black; font-weight:bold; font-size:10pt;}
+
+.datetext	{ font-size: 10pt; color:000000}
+

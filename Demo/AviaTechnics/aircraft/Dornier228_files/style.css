@@ -1,0 +1,33 @@
+A {
+	COLOR: black
+}
+A:hover {
+	COLOR: #ff6600
+}
+A:visited {
+	COLOR: black
+}
+A:hover {
+	COLOR: #ff6600
+}
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: blue; FONT-FAMILY: arial,verdana,tahoma,helvetica,sans-serif,times
+}
+A.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: blue; FONT-FAMILY: arial,verdana,tahoma,helvetica,sans-serif,times
+}
+A.nav:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: arial,verdana,tahoma,helvetica,sans-serif,times
+}
+A.nav:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: blue; FONT-FAMILY: arial,verdana,tahoma,helvetica,sans-serif,times
+}
+A.nav:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: arial,verdana,tahoma,helvetica,sans-serif,times
+}
+.itemnav {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: arial,verdana,tahoma,helvetica,sans-serif,times
+}
+.datetext {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
