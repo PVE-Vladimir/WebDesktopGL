@@ -1136,6 +1136,9 @@ start_main() {
     chromium_sessionon="chromium_sessionon_root"
     fi
     rm -rf "$dir_chromium/$chromium_sessionon";
+    if [[ "$XDG_SESSION_TYPE" != x11 || "$XDG_SESSION_TYPE" != X11 ]]; then
+        XDG_SESSION_TYPE=notX11
+    fi
     nohup "$dir_chromium/chrome" \
     --user-data-dir="$dir_chromium/$chromium_sessionon" \
     --no-sandbox \
