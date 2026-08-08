@@ -40,7 +40,7 @@ while true; do
 
         if [[ $quantity == "1" ]]; then
             DISPLAY=$DISPLAY "$SCRIPT_DIR/xdotool_xseticon" xseticon "$window_id_pid" ${arr_txt[$icon_text]}
-            echo -e "The number of elements is 1, so it's set only once. /nIf you want to constantly update the image, use an array of 2 identical elements."
+            echo -e "The number of elements is 1, so it's set only once. \nIf you want to constantly update the image, use an array of 2 identical elements."
             exit 0
         fi
 
